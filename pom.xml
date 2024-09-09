@@ -15,12 +15,14 @@
     </properties>
 
     <dependencies>
+        <!-- https://mvnrepository.com/artifact/com.intuit.karate/karate-junit5 -->
         <dependency>
-            <groupId>io.karatelabs</groupId>
+            <groupId>com.intuit.karate</groupId>
             <artifactId>karate-junit5</artifactId>
-            <version>1.5.0</version>
+            <version>1.4.1</version>
             <scope>test</scope>
         </dependency>
+
     </dependencies>
 
 
