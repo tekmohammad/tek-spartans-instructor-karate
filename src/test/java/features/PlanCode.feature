@@ -1,3 +1,4 @@
+@Regression
 Feature: Testing Plan Code section
 
   @PlanCode_1
