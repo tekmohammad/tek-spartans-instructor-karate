@@ -9,7 +9,7 @@ public class TestRunner {
         return Karate
                 .run("classpath:features")
                 .karateEnv("dev")
-                .tags("@US_2");
+                .tags("@PlanCode_1");
 
     }
 }
