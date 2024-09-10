@@ -1,7 +1,7 @@
 Feature: API testing for Security Functions
 
   Background: Setup test
-    Given url 'https://dev.insurance-api.tekschool-students.com'
+    Given url BASE_URL
     Given path '/api/token'
 
   @US_1
@@ -14,16 +14,25 @@ Feature: API testing for Security Functions
       }
       """
     When method post
+    Then print response
     Then status 200
+    Then assert response.username == "supervisor"
 
   @US_2
-  Scenario: Valid token with invalid credential
+  Scenario Outline: Valid token with invalid credential
     Given request
       """
       {
-        "username": "supervisorx",
-        "password": "tek_supervisor"
+        "username": "<username>",
+        "password": "<password>"
       }
       """
     When method post
-    Then status 404
+    Then print response
+    Then status <statusCode>
+    Then assert response.errorMessage == "<error>"
+
+    Examples:
+      | username    | password       | statusCode | error                      |
+      | Supervisorx | tek_supervisor | 404        | User Supervisorx not found |
+      | supervisor  | wrong password | 400        | Password not matched       |
