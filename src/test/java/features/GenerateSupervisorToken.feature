@@ -1,3 +1,4 @@
+@Regression
 Feature: Generating Token with Supervisor User
 
   Scenario: Generate Valid token

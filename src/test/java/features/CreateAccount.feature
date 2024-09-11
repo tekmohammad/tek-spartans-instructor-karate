@@ -1,6 +1,7 @@
   #  Activity
     #Send request to /api/accounts/add-primary-account
     # Status should be 201 and response contain email entity
+  @Regression
   Feature: Create Account Feature
   @NewAccount_1
     Scenario: Create new account

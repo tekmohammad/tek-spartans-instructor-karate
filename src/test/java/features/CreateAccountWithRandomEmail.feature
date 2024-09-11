@@ -1,3 +1,4 @@
+@Regression
 Feature: Create new Account with Random Email
 
   Background: Setup test
