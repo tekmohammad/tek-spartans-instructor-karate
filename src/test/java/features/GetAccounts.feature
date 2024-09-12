@@ -1,3 +1,4 @@
+@Regression
 Feature: Testing Get Accounts API
 
   @GetAccounts_1

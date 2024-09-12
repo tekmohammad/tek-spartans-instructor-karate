@@ -1,3 +1,4 @@
+@Regression
 Feature: Testing profile section
 
   @Profile
