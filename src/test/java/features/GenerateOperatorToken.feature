@@ -1,5 +1,5 @@
 @Regression
-Feature: Generating Token with Supervisor User
+Feature: Generating Token with Operator User
 
   Scenario: Generate Valid token
     Given url BASE_URL

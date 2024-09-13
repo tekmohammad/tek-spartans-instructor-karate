@@ -9,6 +9,6 @@ public class TestRunner {
         return Karate
                 .run("classpath:features")
                 .karateEnv("dev")
-                .tags("@DeleteAccount");
+                .tags("@End2EndAccount");
     }
 }
